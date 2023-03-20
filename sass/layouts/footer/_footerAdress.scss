@@ -1,0 +1,32 @@
+// .address {
+//   &__item:not(:last-child) {
+//     padding-bottom: 10px;
+//   }
+
+//   &__link {
+//     @include font(14px, 400, 1.7, 0.03em);
+
+//     font-style: normal;
+//     color: $color-white;
+//     text-decoration: none;
+//     display: block;
+//     transition: color var(--transition-timing-function)
+//       var(--transition-duration);
+//     &:hover,
+//     &:focus {
+//       color: $color-accent;
+//     }
+//   }
+
+//   &__contact {
+//     @include font(14px, 400, 1.7, 0.03);
+
+//     color: $color-white-subscribe;
+//     text-decoration: none;
+//     font-style: normal;
+//     &:hover,
+//     &:focus {
+//       color: $color-accent;
+//     }
+//   }
+// }

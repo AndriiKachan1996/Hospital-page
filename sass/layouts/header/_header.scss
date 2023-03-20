@@ -1,0 +1,65 @@
+.header {
+  border-bottom: 1px solid $color-header-border;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    height: 100px;
+  }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    height: 60px;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    height: 120px;
+  }
+
+  &__logo-wrap {
+    margin-top: 90px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-top: 40px;
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      margin-top: 10px;
+    }
+  }
+
+  &__logo--img {
+    border-radius: 50%;
+    width: 200px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: 130px;
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      width: 100px;
+    }
+  }
+}
+
+// .header__logo--img {
+//   border-radius: 50%;
+//   width: 200px;
+
+//   @media screen and (min-width: 768px) and (max-width: 1199px) {
+//     width: 130px;
+//   }
+
+//   @media screen and (min-width: 480px) and (max-width: 767px) {
+//     width: 30px;
+//   }
+// }
+
+.header__container {
+  display: flex;
+  align-items: center;
+  height: 120px;
+}
+
+// .header__container {
+//   @media screen and (min-width: 768px) {
+//     height: 80px;
+//   }
+// }

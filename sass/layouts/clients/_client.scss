@@ -1,0 +1,71 @@
+// .client {
+//   padding: 60px 0;
+
+//   @include desktop {
+//     padding: 94px 0;
+//   }
+
+//   &__list {
+//     display: flex;
+//     margin: -15px;
+
+//     @include tablet {
+//       margin: -15px;
+//     }
+
+//     @include desktop {
+//       margin: -15px;
+//     }
+
+//     @media screen and (max-width: 1199px) {
+//       flex-wrap: wrap;
+//     }
+//   }
+
+//   &__item {
+//     @include mobileMax {
+//       flex-basis: calc((100% - 2 * 30px) / 2);
+//       margin: 15px;
+//     }
+
+//     @include tablet {
+//       flex-basis: calc((100% - 3 * 30px) / 3);
+//       margin: 15px;
+//     }
+
+//     @include desktop {
+//       flex-basis: calc((100% - 6 * 30px) / 6);
+//       margin: 15px;
+//     }
+//   }
+
+//   &__link {
+//     height: 92px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     border: 1px solid $color-icon;
+//     border-radius: 4px;
+//     fill: $color-icon;
+//     transition: fill $duration $timing-function,
+//       border-color $duration $timing-function;
+
+//     &:hover,
+//     &:focus {
+//       fill: $color-accent;
+//       border-color: $color-accent;
+//     }
+
+//     @include tablet {
+//       @include size(226px, 92px);
+//     }
+
+//     @include desktop {
+//       @include size(170px, 92px);
+//     }
+//   }
+
+//   &__icon {
+//     @include size(102px, 60px);
+//   }
+// }

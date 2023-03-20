@@ -1,0 +1,48 @@
+// .footer-join {
+//   text-align: center;
+//   margin-bottom: 60px;
+
+//   &__title {
+//     @include font(14px, 700, 1.1, 0.03em);
+
+//     margin-bottom: 20px;
+//     color: $color-white;
+//     text-transform: uppercase;
+
+//     @include desktop {
+//       text-align: left;
+//     }
+//   }
+// }
+
+// .footer-social {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+
+//   &__item:not(:last-child) {
+//     margin-right: 10px;
+//   }
+
+//   &__link {
+//     @include size(44px, 44px);
+
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     background-color: $color-white-overlay;
+//     border-radius: 50%;
+//     transition: background-color $timing-function $duration;
+//     &:hover,
+//     &:focus {
+//       background-color: $color-accent;
+//     }
+//   }
+
+//   &__icon {
+//     @include size(20px, 20px);
+
+//     fill: $color-white;
+//     display: flex;
+//   }
+// }

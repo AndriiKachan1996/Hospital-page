@@ -1,0 +1,30 @@
+// BASE
+@import "./base/variables";
+@import "./base/mixins";
+@import "./base/common";
+@import "./base/utils";
+@import "./base/сontainer";
+
+// LAYOUTS
+@import "./layouts/header/header";
+@import "./layouts/header/headerBurger";
+@import "./layouts/header/headerButton";
+@import "./layouts/header/headerContacts";
+@import "./layouts/header/headerIcon";
+@import "./layouts/header/headerNav";
+@import "./layouts/header/headerSocial";
+
+@import "./layouts/hero/hero";
+@import "./layouts/preference/preference";
+@import "./layouts/work/work";
+@import "./layouts/team/team";
+@import "./layouts/clients/client";
+@import "./layouts/footer/footer";
+
+@import "./layouts/footer/footer";
+@import "./layouts/footer/footerAdress";
+@import "./layouts/footer/footerForm";
+@import "./layouts/footer/footerJoin";
+
+// COMPONENTS
+@import "./components/modal";
