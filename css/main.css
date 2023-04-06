@@ -132,10 +132,8 @@ body {
 }
 
 .containerDepartmens {
+  width: 2200px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 2500px;
 }
 
 .header {
@@ -886,6 +884,7 @@ span {
 }
 .wrapp {
   width: 100%;
+  height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -896,7 +895,7 @@ span {
 }
 
 .slide {
-  height: 80vh;
+  height: 800px;
   border-radius: 20px;
   margin: 10px;
   cursor: pointer;
