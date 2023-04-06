@@ -1,26 +1,45 @@
 (() => {
-  const mobileMenu = document.querySelector('.js-menu-container');
-  const openMenuBtn = document.querySelector('.js-open-menu');
-  const closeMenuBtn = document.querySelector('.js-close-menu');
+  const mobileMenu = document.querySelector(".js-menu-container");
+  const openMenuBtn = document.querySelector(".js-open-menu");
+  const closeMenuBtn = document.querySelector(".js-close-menu");
 
   const toggleMenu = () => {
-    const isMenuOpen = openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
-    openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
-    mobileMenu.classList.toggle('is-open');
+    const isMenuOpen =
+      openMenuBtn.getAttribute("aria-expanded") === "true" || false;
+    openMenuBtn.setAttribute("aria-expanded", !isMenuOpen);
+    mobileMenu.classList.toggle("is-open");
 
     isMenuOpen
-      ? (document.body.style.overflow = 'auto')
-      : (document.body.style.overflow = 'hidden');
+      ? (document.body.style.overflow = "auto")
+      : (document.body.style.overflow = "hidden");
   };
 
-  openMenuBtn.addEventListener('click', toggleMenu);
-  closeMenuBtn.addEventListener('click', toggleMenu);
+  openMenuBtn.addEventListener("click", toggleMenu);
+  closeMenuBtn.addEventListener("click", toggleMenu);
 
   // Close the mobile menu on wider screens if the device orientation changes
-  window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
+  window.matchMedia("(min-width: 768px)").addEventListener("change", (e) => {
     if (!e.matches) return;
-    mobileMenu.classList.remove('is-open');
-    openMenuBtn.setAttribute('aria-expanded', false);
-    document.body.style.overflow = 'auto';
+    mobileMenu.classList.remove("is-open");
+    openMenuBtn.setAttribute("aria-expanded", false);
+    document.body.style.overflow = "auto";
   });
 })();
+
+function slidesPlugin(activeSlide) {
+  const slides = document.querySelectorAll(".slide");
+  slides[activeSlide].classList.add("active");
+  slides.forEach((slide) => {
+    slide.addEventListener("click", () => {
+      clearActiveClasses();
+      slide.classList.add("active");
+    });
+  });
+
+  function clearActiveClasses() {
+    slides.forEach((slide) => {
+      slide.classList.remove("active");
+    });
+  }
+}
+slidesPlugin(4);
