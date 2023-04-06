@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
 h1,
 h2,
 h3,
@@ -256,9 +258,6 @@ body {
 }
 
 .contacts-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-left: auto;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -300,8 +299,8 @@ body {
   }
 }
 
-.contacts-header__item:not(:last-child) {
-  margin-right: 20px;
+.contacts-header__item {
+  padding: 8px;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts-header__item:not(:last-child) {
@@ -325,10 +324,11 @@ body {
 }
 
 .contacts-header__link {
-  font-size: 24px;
+  font-size: 34px;
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 1.1;
   letter-spacing: 0.02em;
+  font-family: "Raleway", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -445,6 +445,7 @@ body {
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: 0.02em;
+  font-family: "Raleway", sans-serif;
   position: relative;
   padding-bottom: 5px;
   text-decoration: none;
@@ -518,7 +519,7 @@ body {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(..//..//..//image/HERO/7895078.jpg);
+  background-image: url(..//..//..//image/HERO.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -541,6 +542,7 @@ body {
   font-weight: 900;
   line-height: 1.6;
   letter-spacing: 0.06em;
+  font-family: "Raleway", sans-serif;
   margin: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -637,18 +639,6 @@ span {
   color: #154160;
 }
 
-:root {
-  --d: 700ms;
-  --e: cubic-bezier(0.19, 1, 0.22, 1);
-  --font-sans: "Rubik", sans-serif;
-  --font-serif: "Cardo", serif;
-}
-
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 .doctors-container {
   margin: 0 auto;
   padding-left: 15px;
@@ -662,14 +652,16 @@ span {
 }
 
 .doctors-title {
-  display: block;
-  margin-bottom: 50px;
+  text-align: center;
   font-size: 44px;
   font-weight: 900;
-  line-height: 1.4;
+  line-height: 1.6;
   letter-spacing: 0.06em;
-  max-width: 100%;
-  text-align: center;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-size: 40px;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
   color: #166c65;
 }
 
@@ -928,4 +920,18 @@ span {
   opacity: 1;
   -webkit-transition: opacity 0.3s ease-in 0.4s;
   transition: opacity 0.3s ease-in 0.4s;
+}
+
+.dep-title {
+  text-align: center;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-size: 40px;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  color: #166c65;
 }/*# sourceMappingURL=main.css.map */

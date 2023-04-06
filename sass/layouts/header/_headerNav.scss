@@ -42,7 +42,7 @@
 
 .nav__link {
   @include font(34px, 500, 1.1, 0.02em);
-
+  font-family: "Raleway", sans-serif;
   position: relative;
   padding-bottom: 5px;
   text-decoration: none;

@@ -1,5 +1,5 @@
 .contacts-header {
-  display: flex;
+  // display: flex;
   margin-left: auto;
 
   @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -31,9 +31,10 @@
 }
 
 .contacts-header__item {
-  &:not(:last-child) {
-    margin-right: 20px;
-  }
+  // &:not(:last-child) {
+  //   margin-right: 20px;
+  // }
+  padding: 8px;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     &:not(:last-child) {
@@ -60,7 +61,8 @@
 }
 
 .contacts-header__link {
-  @include font(24px, 500, 1.2, 0.02em);
+  @include font(34px, 500, 1.1, 0.02em);
+  font-family: "Raleway", sans-serif;
 
   display: flex;
   align-items: center;

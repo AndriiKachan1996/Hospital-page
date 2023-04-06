@@ -1,9 +1,8 @@
 .hero {
-  // background-color: $color-primary-background;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(..//..//..//image/HERO/7895078.jpg);
+  background-image: url(..//..//..//image/HERO.jpg);
 
   background-position: center;
   background-repeat: no-repeat;
@@ -23,7 +22,7 @@
 
   &__title {
     @include font(26px, 900, 1.6, 0.06em);
-
+    font-family: "Raleway", sans-serif;
     margin: auto;
     align-items: center;
     color: #166c65;
